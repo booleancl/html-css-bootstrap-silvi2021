@@ -19,6 +19,10 @@ navegador puede interpretar.
 El documento principal de un sitio o aplicación se debe llamar
 **index.html*. Todo junto y en minúsculas.
 
+### Un poquito de historia
+
+HTML inicialmente estaba pensado para transmitir
+documentación cientifica. Y se necesitaba una forma de indicar que secciones del documento eran párrafos,imágenes,títulos y encabezados. Con este motivo nació  HTML.
 
 ### Doctype
 
@@ -110,6 +114,9 @@ del árbol. Y pensaremos que las etiquetas son **nodos** que tiene
 
 ## Etiquetas principales
 
+Podemos separar las etiquetas en 2 tipos:
+semánticos y no semánticos.
+
 ### Títulos
 
 Las etiquetas para hacer títulos son  las etiquetas **h**
@@ -175,16 +182,107 @@ en el atributo `alt` conocido como texto alternativo.
         <tr>
             <td>Tomate</td>
             <td>Lechuga</td>
-
         </tr>
         <tr>
             <td>Palta</td> 
             <td>Porotos</td>    
-
         </tr>
         <tr>
             <td>Mayo</td>
             <td>Aji</td>
         </tr>
-
     </table>
+
+### Etiquetas no semánticas
+
+    Estas etiquetas no tienen un significado propio y sirven como contenedor para agrupar otras etiquetas
+
+## div 
+
+    ```html
+    <div>
+        <p>Hola mundo</p>
+    </div>
+    ```
+
+## spam
+
+    La etiqueta span se puede usar dentro de un texto.
+
+    ```html
+    <div>
+        <p>Hola <span>mundo</span></p>
+    </div>
+    ```
+
+La idea detrás de los elementos no semánticos es utilizar CSS para darles estilo.
+
+Más adelante,en este módulo veremos lo frecuente de su uso con el marco de trabajo o framework Booststrap.
+
+## Formularios
+Contiene controles interactivos para ingresar información 
+
+```html
+<form action="/search" method="get">
+...
+</from>
+```
+
+Cuando enviamos el formulario mediante el método `get`,los parámetros ingresados quedan reflejados en la url después del signo `?` y separados por `&`
+
+## CSS
+
+hojas de estilo en cascada(Cascade style Sheets)
+CSS nos permite entregar al sitio el aspecto que queremos.Lo hace
+aplicando reglas de estilo soobre los diferentes elementos del HTML.
+
+Los navegadores tienen estilos predefinidos para mostrar las diferentes
+etiquetas.
+
+Cuando el código CSS está definido dentro del mismo archivo html,
+se denomina css-inline,pero no es la mejor forma de definir los estilos
+que se van a utilizar en varias páginas.Para eso es mejor utilizar un
+archivo externo y vincularlo al html.
+
+### Sintaxis CSS
+
+Las reglas CSS parten con un selector,luego dentro de las llaves se ingresan
+las propiedades junto con su valor.
+ejemplos
+
+```css
+h2{
+    color: blue;
+    font-size: 24px;
+}
+
+selector{
+    propiedad:valor;
+    propiedad:valor;
+}
+
+p{
+   color:red;
+   text-align: center;
+}
+
+```
+
+## Selectores
+
+En el ejemplo anterior el selector era la misma etiqueta,es decir, la regla 
+de estilo aplica a **todas** las etiquetas de ese tipo. Tenemos otros 2 selectores
+muy frecuentes.El selector por `id` y por `clase`.
+
+El `id` es un atributo de las etiquetas HTML.Toda etiqueta HTML puede tener el atributo
+`id` para diferenciarlo del resto. Y podemos usar ese atributo como selector css usando
+la notación `#`
+
+```css
+#fname{
+    border-radius: 6px;
+}
+```
+
+
+
