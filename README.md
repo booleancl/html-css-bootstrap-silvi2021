@@ -160,7 +160,7 @@ en el atributo `alt` conocido como texto alternativo.
         <li>Jueves</li>
         <li>viernes</li>
     </ol>
-
+```
 #### No ordenadas
 
 ```html
@@ -440,7 +440,29 @@ Ejemplo:
 }
 ```
 
+### Marcos de Trabajo o Frameworks CSS
 
+Los marcos de trabajo CSS traen echo el css responsivo 
+listo para ser utilizados. En general se utilizarán mediante
+clases css..El framework define una serie de clases y utilidades
+que han sido diseñadas y probadas para cumplir con los requisitos
+de un diseño moderno y usable.
+
+Uno de los más famosos bootstrap.Marco de trabajo de código libre
+utilizado en millones de sitios y apps.
+
+### Bootstrap
+
+Bootstrap basa su enfoque en dividir el espacio disponible en una
+grilla de filas y columnas.Mediante las clases`row` y `col`.
+
+
+Bootstrap es un framework orientando al desarrollo mobile,es decir,su principal
+preocupación son los dispositivos pequeños.Se llama asi mismo un framework
+"Mobile First".
+
+
+### Contenedores
 
 
 
